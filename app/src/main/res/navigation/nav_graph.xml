@@ -28,5 +28,12 @@
         android:id="@+id/writeArticleFragment"
         android:name="com.example.tomorrow_home_app.ui.article.WriteArticleFragment"
         android:label="WriteArticleFragment"
-        tools:layout="@layout/fragment_write"/>
+        tools:layout="@layout/fragment_write">
+        <action
+            android:id="@+id/action_writeArticleFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/actionBack"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
